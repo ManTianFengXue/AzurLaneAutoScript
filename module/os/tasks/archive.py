@@ -34,7 +34,9 @@ class OpsiArchive(OSMap):
         while True:
             # In case logger bought manually,
             # finish pre-existing archive zone
-            self.os_finish_daily_mission(question=False, rescan=False)
+            self.os_finish_daily_mission(
+                question=False,
+                rescan='current' if self.is_akashi_shop_enabled else False)
 
             logger.hr('OS voucher', level=1)
             self._os_voucher_enter()

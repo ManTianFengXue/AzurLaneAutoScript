@@ -8,7 +8,11 @@ class OpsiHazard1Leveling(OSMap):
         # Without these enabled, CL1 gains 0 profits
         self.config.override(
             OpsiGeneral_DoRandomMapEvent=True,
-            OpsiGeneral_AkashiShopFilter='ActionPoint',
+            OpsiGeneral_AkashiShopFilter=(
+                'ActionPoint > PurpleCoins'
+                if self.config.OpsiHazard1Leveling_BuyPurpleCoins
+                else 'ActionPoint'
+            ),
         )
         if not self.config.is_task_enabled('OpsiMeowfficerFarming'):
             self.config.cross_set(keys='OpsiMeowfficerFarming.Scheduler.Enable', value=True)

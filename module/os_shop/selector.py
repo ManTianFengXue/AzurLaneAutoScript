@@ -98,11 +98,26 @@ class Selector():
             list[Item]:
         """
         items = self.pretreatment(items)
+        custom = []
+        if self.config.OpsiAkashiShop_BuyActionPoint:
+            custom.append('ActionPoint')
+        if self.config.OpsiAkashiShop_BuyPurpleCoins:
+            custom.append('PurpleCoins')
+        if custom:
+            # OpsiAkashiShop 接管购买清单，不再套用通用过滤器
+            FILTER.load(' > '.join(custom))
+            return FILTER.applys(items, funcs=[self.enough_coins_in_akashi])
         parser = self.config.OpsiGeneral_AkashiShopFilter
         if not parser.strip():
             parser = GeneratedConfig.OpsiGeneral_AkashiShopFilter
         FILTER.load(parser)
-        return FILTER.applys(items, funcs=[self.check_cl1_purple_coins, self.enough_coins_in_akashi])
+        if self.config.OpsiHazard1Leveling_BuyPurpleCoins \
+                or self.config.OpsiMeowfficerShop_BuyPurpleCoins:
+            # 勾选后允许在明石商店花作战补给凭证买紫币
+            funcs = [self.enough_coins_in_akashi]
+        else:
+            funcs = [self.check_cl1_purple_coins, self.enough_coins_in_akashi]
+        return FILTER.applys(items, funcs=funcs)
 
     def items_filter_in_os_shop(self, items) -> List[Item]:
         """
