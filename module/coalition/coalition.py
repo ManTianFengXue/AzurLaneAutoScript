@@ -60,6 +60,8 @@ class Coalition(CoalitionCombat, CampaignEvent):
             ocr = DALPtOcr(DAL_PT_OCR, name='OCR_PT', letter=(255, 213, 69), threshold=128)
         elif event == 'coalition_20260122':
             ocr = Digit(FASHION_PT_OCR, name='OCR_PT', letter=(41, 40, 40), threshold=128)
+        elif event == 'coalition_20261124':
+            ocr = Digit(TRUTH_PT_OCR, name='OCR_PT', letter=(255, 255, 255), threshold=128)
         elif event == 'coalition_20260723':
             if self.config.SERVER == 'en':
                 ocr = Digit(HORROR_PT_OCR, name='OCR_PT', lang='cnocr', letter=(228, 230, 237), threshold=256)

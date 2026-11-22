@@ -37,6 +37,14 @@ class OSStatus(UI):
         return self.config.is_task_enabled('OpsiHazard1Leveling')
 
     @property
+    def is_akashi_shop_enabled(self) -> bool:
+        """
+        Whether to visit Akashi shop, configured in `OpsiAkashiShop`.
+        """
+        return bool(self.config.OpsiAkashiShop_BuyActionPoint
+                    or self.config.OpsiAkashiShop_BuyPurpleCoins)
+
+    @property
     def nearest_task_cooling_down(self) -> t.Optional[Function]:
         """
         If having any tasks cooling down,

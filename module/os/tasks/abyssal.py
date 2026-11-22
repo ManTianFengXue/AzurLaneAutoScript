@@ -30,7 +30,7 @@ class OpsiAbyssal(OSMap):
             self.config.task_stop()
 
         self.config.override(
-            OpsiGeneral_DoRandomMapEvent=False,
+            OpsiGeneral_DoRandomMapEvent=self.is_akashi_shop_enabled,
             HOMO_EDGE_DETECT=False,
             STORY_OPTION=0
         )

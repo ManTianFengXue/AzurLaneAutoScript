@@ -64,6 +64,15 @@ class CoalitionUI(Combat):
         elif event == 'coalition_20251120':
             logger.info('Coalition event coalition_20251120 has no mode switch')
             return
+        elif event == 'coalition_20261124':
+            # 本期没有剧情/作战开关素材，点一下作战模式确保不是剧情模式
+            logger.info('Coalition event coalition_20261124: click battle mode')
+            if self.appear(TRUTH_MODE_BATTLE, offset=(20, 20)):
+                self.device.click(TRUTH_MODE_BATTLE)
+                self.device.sleep(1)
+            else:
+                logger.warning('Battle mode button not found')
+            return
         elif event == 'coalition_20260122':
             mode_switch = Switch('CoalitionMode', offset=(20, 20))
             mode_switch.add_state('story', FASHION_MODE_STORY)
@@ -115,6 +124,9 @@ class CoalitionUI(Combat):
         elif event == 'coalition_20260723':
             fleet_switch.add_state('single', HORROR_SWITCH_SINGLE)
             fleet_switch.add_state('multi', HORROR_SWITCH_MULTI)
+        elif event == 'coalition_20261124':
+            fleet_switch.add_state('single', TRUTH_SWITCH_SINGLE)
+            fleet_switch.add_state('multi', TRUTH_SWITCH_MULTI)
         else:
             logger.error(f'FLEET_SWITCH is not defined in event {event}')
             raise ScriptError
@@ -185,6 +197,12 @@ class CoalitionUI(Combat):
             ('coalition_20260723', 'hard'): HORROR_HARD,
             ('coalition_20260723', 'sp'): HORROR_SP,
             ('coalition_20260723', 'ex'): HORROR_EX,
+            # TRUTH
+            ('coalition_20261124', 'easy'): TRUTH_EASY,
+            ('coalition_20261124', 'normal'): TRUTH_NORMAL,
+            ('coalition_20261124', 'hard'): TRUTH_HARD,
+            ('coalition_20261124', 'sp'): TRUTH_SP,
+            ('coalition_20261124', 'ex'): TRUTH_EX,
         }
         stage = stage.lower()
         try:
@@ -279,6 +297,12 @@ class CoalitionUI(Combat):
             ('coalition_20260723', 'hard'): 3,
             ('coalition_20260723', 'sp'): 4,
             ('coalition_20260723', 'ex'): 5,
+            # TRUTH
+            ('coalition_20261124', 'easy'): 1,
+            ('coalition_20261124', 'normal'): 2,
+            ('coalition_20261124', 'hard'): 3,
+            ('coalition_20261124', 'sp'): 4,
+            ('coalition_20261124', 'ex'): 5,
         }
         stage = stage.lower()
         try:
@@ -309,6 +333,8 @@ class CoalitionUI(Combat):
             return NEONCITY_FLEET_PREPARATION
         elif event == 'coalition_20260723':
             return HORROR_FLEET_PREPARATION
+        elif event == 'coalition_20261124':
+            return TRUTH_FLEET_PREPARATION
         else:
             logger.error(f'FLEET_PREPARATION is not defined in event {event}')
             raise ScriptError
@@ -334,6 +360,7 @@ class CoalitionUI(Combat):
             'coalition_20250626',
             'coalition_20260122',
             'coalition_20260723',
+            'coalition_20261124',
         ]:
             # easy is single fleet, SP and EX must must multiple fleets
             if stage in ['easy', 'sp', 'ex']:

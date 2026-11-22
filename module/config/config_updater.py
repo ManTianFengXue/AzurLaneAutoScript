@@ -35,7 +35,7 @@ EVENTS = ['Event', 'Event2', 'EventA', 'EventB', 'EventC', 'EventD', 'EventSp']
 GEMS_FARMINGS = ['GemsFarming']
 RAIDS = ['Raid', 'RaidDaily']
 WAR_ARCHIVES = ['WarArchives']
-COALITIONS = ['Coalition', 'CoalitionSp']
+COALITIONS = ['Coalition', 'CoalitionSp', 'CoalitionDaily']
 MARITIME_ESCORTS = ['MaritimeEscort']
 HOSPITAL = ['Hospital']
 
