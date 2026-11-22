@@ -87,3 +87,198 @@ NEONCITY_SWITCH_MULTI = Button(area={'cn': (1087, 458, 1217, 486), 'en': (1085, 
 NEONCITY_SWITCH_SINGLE = Button(area={'cn': (940, 458, 1071, 486), 'en': (947, 462, 1070, 482), 'jp': (975, 459, 1046, 484), 'tw': (940, 458, 1071, 486)}, color={'cn': (230, 181, 62), 'en': (178, 139, 48), 'jp': (197, 149, 52), 'tw': (230, 181, 62)}, button={'cn': (940, 458, 1071, 486), 'en': (947, 462, 1070, 482), 'jp': (975, 459, 1046, 484), 'tw': (940, 458, 1071, 486)}, file={'cn': './assets/cn/coalition/NEONCITY_SWITCH_SINGLE.png', 'en': './assets/en/coalition/NEONCITY_SWITCH_SINGLE.png', 'jp': './assets/jp/coalition/NEONCITY_SWITCH_SINGLE.png', 'tw': './assets/cn/coalition/NEONCITY_SWITCH_SINGLE.png'})
 NEONCITY_UI_BACK = Button(area={'cn': (30, 45, 73, 88), 'en': (30, 45, 73, 88), 'jp': (30, 45, 73, 88), 'tw': (30, 45, 73, 88)}, color={'cn': (54, 55, 57), 'en': (54, 55, 57), 'jp': (54, 55, 57), 'tw': (54, 55, 57)}, button={'cn': (30, 45, 73, 88), 'en': (30, 45, 73, 88), 'jp': (30, 45, 73, 88), 'tw': (30, 45, 73, 88)}, file={'cn': './assets/cn/coalition/NEONCITY_UI_BACK.png', 'en': './assets/cn/coalition/NEONCITY_UI_BACK.png', 'jp': './assets/cn/coalition/NEONCITY_UI_BACK.png', 'tw': './assets/cn/coalition/NEONCITY_UI_BACK.png'})
 NEONCITY_UI_HOME = Button(area={'cn': (1208, 43, 1251, 86), 'en': (1208, 43, 1251, 86), 'jp': (1208, 43, 1251, 86), 'tw': (1208, 43, 1251, 86)}, color={'cn': (74, 74, 77), 'en': (74, 74, 77), 'jp': (74, 74, 77), 'tw': (74, 74, 77)}, button={'cn': (1208, 43, 1251, 86), 'en': (1208, 43, 1251, 86), 'jp': (1208, 43, 1251, 86), 'tw': (1208, 43, 1251, 86)}, file={'cn': './assets/cn/coalition/NEONCITY_UI_HOME.png', 'en': './assets/cn/coalition/NEONCITY_UI_HOME.png', 'jp': './assets/cn/coalition/NEONCITY_UI_HOME.png', 'tw': './assets/cn/coalition/NEONCITY_UI_HOME.png'})
+
+# truth academy (coalition_20261124)
+TRUTH_EASY = Button(
+    area=(145, 278, 195, 305), color=(148, 176, 198), button=(145, 278, 195, 305),
+    file={'cn': './assets/cn/coalition/TRUTH_EASY.png', 'en': './assets/cn/coalition/TRUTH_EASY.png',
+          'jp': './assets/cn/coalition/TRUTH_EASY.png', 'tw': './assets/cn/coalition/TRUTH_EASY.png'},
+    name='TRUTH_EASY')
+
+TRUTH_NORMAL = Button(
+    area=(325, 121, 372, 148), color=(120, 176, 223), button=(325, 121, 372, 148),
+    file={'cn': './assets/cn/coalition/TRUTH_NORMAL.png', 'en': './assets/cn/coalition/TRUTH_NORMAL.png',
+          'jp': './assets/cn/coalition/TRUTH_NORMAL.png', 'tw': './assets/cn/coalition/TRUTH_NORMAL.png'},
+    name='TRUTH_NORMAL')
+
+TRUTH_HARD = Button(
+    area=(663, 168, 710, 195), color=(125, 173, 216), button=(663, 168, 710, 195),
+    file={'cn': './assets/cn/coalition/TRUTH_HARD.png', 'en': './assets/cn/coalition/TRUTH_HARD.png',
+          'jp': './assets/cn/coalition/TRUTH_HARD.png', 'tw': './assets/cn/coalition/TRUTH_HARD.png'},
+    name='TRUTH_HARD')
+
+TRUTH_SP = Button(
+    area=(810, 511, 843, 538), color=(146, 116, 169), button=(810, 511, 843, 538),
+    file={'cn': './assets/cn/coalition/TRUTH_SP.png', 'en': './assets/cn/coalition/TRUTH_SP.png',
+          'jp': './assets/cn/coalition/TRUTH_SP.png', 'tw': './assets/cn/coalition/TRUTH_SP.png'},
+    name='TRUTH_SP')
+
+TRUTH_EX = Button(
+    area=(958, 245, 992, 272), color=(192, 153, 200), button=(958, 245, 992, 272),
+    file={'cn': './assets/cn/coalition/TRUTH_EX.png', 'en': './assets/cn/coalition/TRUTH_EX.png',
+          'jp': './assets/cn/coalition/TRUTH_EX.png', 'tw': './assets/cn/coalition/TRUTH_EX.png'},
+    name='TRUTH_EX')
+
+TRUTH_MODE_BATTLE = Button(
+    area=(10, 625, 178, 702), color=(141, 185, 220), button=(10, 625, 178, 702),
+    file={'cn': './assets/cn/coalition/TRUTH_MODE_BATTLE.png', 'en': './assets/cn/coalition/TRUTH_MODE_BATTLE.png',
+          'jp': './assets/cn/coalition/TRUTH_MODE_BATTLE.png', 'tw': './assets/cn/coalition/TRUTH_MODE_BATTLE.png'},
+    name='TRUTH_MODE_BATTLE')
+
+TRUTH_MODE_STORY = Button(
+    area=(222, 625, 390, 702), color=(162, 190, 224), button=(222, 625, 390, 702),
+    file={'cn': './assets/cn/coalition/TRUTH_MODE_STORY.png', 'en': './assets/cn/coalition/TRUTH_MODE_STORY.png',
+          'jp': './assets/cn/coalition/TRUTH_MODE_STORY.png', 'tw': './assets/cn/coalition/TRUTH_MODE_STORY.png'},
+    name='TRUTH_MODE_STORY')
+
+TRUTH_SWITCH_SINGLE = Button(
+    area=(940, 385, 1063, 410), color=(62, 76, 106), button=(940, 385, 1063, 410),
+    file={'cn': './assets/cn/coalition/TRUTH_SWITCH_SINGLE.png', 'en': './assets/cn/coalition/TRUTH_SWITCH_SINGLE.png',
+          'jp': './assets/cn/coalition/TRUTH_SWITCH_SINGLE.png', 'tw': './assets/cn/coalition/TRUTH_SWITCH_SINGLE.png'},
+    name='TRUTH_SWITCH_SINGLE')
+
+TRUTH_SWITCH_MULTI = Button(
+    area=(1075, 385, 1200, 410), color=(63, 78, 107), button=(1075, 385, 1200, 410),
+    file={'cn': './assets/cn/coalition/TRUTH_SWITCH_MULTI.png', 'en': './assets/cn/coalition/TRUTH_SWITCH_MULTI.png',
+          'jp': './assets/cn/coalition/TRUTH_SWITCH_MULTI.png', 'tw': './assets/cn/coalition/TRUTH_SWITCH_MULTI.png'},
+    name='TRUTH_SWITCH_MULTI')
+
+TRUTH_FLEET_PREPARATION = Button(
+    area=(968, 526, 1112, 566), color=(71, 137, 212), button=(968, 540, 1112, 580),
+    file={'cn': './assets/cn/coalition/TRUTH_FLEET_PREPARATION.png',
+          'en': './assets/cn/coalition/TRUTH_FLEET_PREPARATION.png',
+          'jp': './assets/cn/coalition/TRUTH_FLEET_PREPARATION.png',
+          'tw': './assets/cn/coalition/TRUTH_FLEET_PREPARATION.png'},
+    name='TRUTH_FLEET_PREPARATION')
+
+TRUTH_PT_OCR = Button(
+    area=(1178, 145, 1252, 182), color=(130, 187, 220), button=(1178, 145, 1252, 182),
+    file={'cn': './assets/cn/coalition/TRUTH_PT_OCR.png', 'en': './assets/cn/coalition/TRUTH_PT_OCR.png',
+          'jp': './assets/cn/coalition/TRUTH_PT_OCR.png', 'tw': './assets/cn/coalition/TRUTH_PT_OCR.png'},
+    name='TRUTH_PT_OCR')
+
+TRUTH_COALITION_CHECK = Button(
+    area=(100, 15, 430, 95), color=(160, 204, 228), button=(100, 15, 430, 95),
+    file={'cn': './assets/cn/coalition/TRUTH_COALITION_CHECK.png', 'en': './assets/cn/coalition/TRUTH_COALITION_CHECK.png',
+          'jp': './assets/cn/coalition/TRUTH_COALITION_CHECK.png', 'tw': './assets/cn/coalition/TRUTH_COALITION_CHECK.png'},
+    name='TRUTH_COALITION_CHECK')
+
+TRUTH_CHECK = Button(
+    area=(1110, 395, 1265, 450), color=(183, 188, 194), button=(1110, 395, 1265, 450),
+    file={'cn': './assets/cn/coalition/TRUTH_CHECK.png', 'en': './assets/cn/coalition/TRUTH_CHECK.png',
+          'jp': './assets/cn/coalition/TRUTH_CHECK.png', 'tw': './assets/cn/coalition/TRUTH_CHECK.png'},
+    name='TRUTH_CHECK')
+
+TRUTH_PT_CHECK = Button(
+    area=(1120, 190, 1245, 245), color=(184, 187, 194), button=(1120, 190, 1245, 245),
+    file={'cn': './assets/cn/coalition/TRUTH_PT_CHECK.png', 'en': './assets/cn/coalition/TRUTH_PT_CHECK.png',
+          'jp': './assets/cn/coalition/TRUTH_PT_CHECK.png', 'tw': './assets/cn/coalition/TRUTH_PT_CHECK.png'},
+    name='TRUTH_PT_CHECK')
+
+TRUTH_PT_TEXT = Button(
+    area=(1183, 194, 1244, 229), color=(196, 196, 200), button=(1183, 194, 1244, 229),
+    file={'cn': './assets/cn/coalition/TRUTH_PT_TEXT.png', 'en': './assets/cn/coalition/TRUTH_PT_TEXT.png',
+          'jp': './assets/cn/coalition/TRUTH_PT_TEXT.png', 'tw': './assets/cn/coalition/TRUTH_PT_TEXT.png'},
+    name='TRUTH_PT_TEXT')
+
+TRUTH_SORTIES = Button(
+    area=(848, 600, 982, 640), color=(139, 184, 229), button=(848, 600, 982, 640),
+    file={'cn': './assets/cn/coalition/TRUTH_SORTIES.png', 'en': './assets/cn/coalition/TRUTH_SORTIES.png',
+          'jp': './assets/cn/coalition/TRUTH_SORTIES.png', 'tw': './assets/cn/coalition/TRUTH_SORTIES.png'},
+    name='TRUTH_SORTIES')
+
+TRUTH_MAX = Button(
+    area=(818, 262, 878, 303), color=(102, 143, 200), button=(818, 262, 878, 303),
+    file={'cn': './assets/cn/coalition/TRUTH_MAX.png', 'en': './assets/cn/coalition/TRUTH_MAX.png',
+          'jp': './assets/cn/coalition/TRUTH_MAX.png', 'tw': './assets/cn/coalition/TRUTH_MAX.png'},
+    name='TRUTH_MAX')
+
+TRUTH_ATTACK = Button(
+    area=(1102, 608, 1206, 652), color=(235, 182, 88), button=(1102, 608, 1206, 652),
+    file={'cn': './assets/cn/coalition/TRUTH_ATTACK.png', 'en': './assets/cn/coalition/TRUTH_ATTACK.png',
+          'jp': './assets/cn/coalition/TRUTH_ATTACK.png', 'tw': './assets/cn/coalition/TRUTH_ATTACK.png'},
+    name='TRUTH_ATTACK')
+
+TRUTH_CONFIRM = Button(
+    area=(1100, 638, 1206, 694), color=(216, 162, 90), button=(1100, 638, 1206, 694),
+    file={'cn': './assets/cn/coalition/TRUTH_CONFIRM.png', 'en': './assets/cn/coalition/TRUTH_CONFIRM.png',
+          'jp': './assets/cn/coalition/TRUTH_CONFIRM.png', 'tw': './assets/cn/coalition/TRUTH_CONFIRM.png'},
+    name='TRUTH_CONFIRM')
+
+TRUTH_REWARD_CONFIRM = Button(
+    area=(768, 596, 916, 651), color=(102, 144, 196), button=(768, 596, 916, 651),
+    file={'cn': './assets/cn/coalition/TRUTH_REWARD_CONFIRM.png', 'en': './assets/cn/coalition/TRUTH_REWARD_CONFIRM.png',
+          'jp': './assets/cn/coalition/TRUTH_REWARD_CONFIRM.png', 'tw': './assets/cn/coalition/TRUTH_REWARD_CONFIRM.png'},
+    name='TRUTH_REWARD_CONFIRM')
+
+TRUTH_VICTORY_TEXT = Button(
+    area=(270, 240, 540, 300), color=(142, 144, 129), button=(270, 240, 540, 300),
+    file={'cn': './assets/cn/coalition/TRUTH_VICTORY_TEXT.png', 'en': './assets/cn/coalition/TRUTH_VICTORY_TEXT.png',
+          'jp': './assets/cn/coalition/TRUTH_VICTORY_TEXT.png', 'tw': './assets/cn/coalition/TRUTH_VICTORY_TEXT.png'},
+    name='TRUTH_VICTORY_TEXT')
+
+TRUTH_TOUCH_CONTINUE = Button(
+    area=(170, 620, 460, 655), color=(57, 99, 152), button=(170, 620, 460, 655),
+    file={'cn': './assets/cn/coalition/TRUTH_TOUCH_CONTINUE.png', 'en': './assets/cn/coalition/TRUTH_TOUCH_CONTINUE.png',
+          'jp': './assets/cn/coalition/TRUTH_TOUCH_CONTINUE.png', 'tw': './assets/cn/coalition/TRUTH_TOUCH_CONTINUE.png'},
+    name='TRUTH_TOUCH_CONTINUE')
+
+TRUTH_PAGE_CHECK = Button(
+    area=(1108, 150, 1268, 520), color=(136, 176, 187), button=(1108, 150, 1268, 520),
+    file={'cn': './assets/cn/coalition/TRUTH_PAGE_CHECK.png', 'en': './assets/cn/coalition/TRUTH_PAGE_CHECK.png',
+          'jp': './assets/cn/coalition/TRUTH_PAGE_CHECK.png', 'tw': './assets/cn/coalition/TRUTH_PAGE_CHECK.png'},
+    name='TRUTH_PAGE_CHECK')
+
+TRUTH_MAIN_CHECK = Button(
+    area=(1020, 455, 1096, 600), color=(217, 213, 213), button=(1020, 455, 1096, 600),
+    file={'cn': './assets/cn/coalition/TRUTH_MAIN_CHECK.png', 'en': './assets/cn/coalition/TRUTH_MAIN_CHECK.png',
+          'jp': './assets/cn/coalition/TRUTH_MAIN_CHECK.png', 'tw': './assets/cn/coalition/TRUTH_MAIN_CHECK.png'},
+    name='TRUTH_MAIN_CHECK')
+
+TRUTH_EXP_CHECK = Button(
+    area=(55, 672, 200, 702), color=(48, 102, 143), button=(55, 672, 200, 702),
+    file={'cn': './assets/cn/coalition/TRUTH_EXP_CHECK.png', 'en': './assets/cn/coalition/TRUTH_EXP_CHECK.png',
+          'jp': './assets/cn/coalition/TRUTH_EXP_CHECK.png', 'tw': './assets/cn/coalition/TRUTH_EXP_CHECK.png'},
+    name='TRUTH_EXP_CHECK')
+
+TRUTH_REWARD_CHECK = Button(
+    area=(385, 78, 700, 122), color=(118, 156, 204), button=(385, 78, 700, 122),
+    file={'cn': './assets/cn/coalition/TRUTH_REWARD_CHECK.png', 'en': './assets/cn/coalition/TRUTH_REWARD_CHECK.png',
+          'jp': './assets/cn/coalition/TRUTH_REWARD_CHECK.png', 'tw': './assets/cn/coalition/TRUTH_REWARD_CHECK.png'},
+    name='TRUTH_REWARD_CHECK')
+
+TRUTH_MAIN_BAR = Button(
+    area=(330, 655, 470, 715), color=(197, 196, 199), button=(330, 655, 470, 715),
+    file={'cn': './assets/cn/coalition/TRUTH_MAIN_BAR.png', 'en': './assets/cn/coalition/TRUTH_MAIN_BAR.png',
+          'jp': './assets/cn/coalition/TRUTH_MAIN_BAR.png', 'tw': './assets/cn/coalition/TRUTH_MAIN_BAR.png'},
+    name='TRUTH_MAIN_BAR')
+
+TRUTH_PLATE_EASY = Button(
+    area=(85, 300, 280, 350), color=(98, 116, 114), button=(85, 300, 280, 350),
+    file={'cn': './assets/cn/coalition/TRUTH_PLATE_EASY.png', 'en': './assets/cn/coalition/TRUTH_PLATE_EASY.png',
+          'jp': './assets/cn/coalition/TRUTH_PLATE_EASY.png', 'tw': './assets/cn/coalition/TRUTH_PLATE_EASY.png'},
+    name='TRUTH_PLATE_EASY')
+
+TRUTH_PLATE_NORMAL = Button(
+    area=(272, 150, 425, 200), color=(98, 108, 118), button=(272, 150, 425, 200),
+    file={'cn': './assets/cn/coalition/TRUTH_PLATE_NORMAL.png', 'en': './assets/cn/coalition/TRUTH_PLATE_NORMAL.png',
+          'jp': './assets/cn/coalition/TRUTH_PLATE_NORMAL.png', 'tw': './assets/cn/coalition/TRUTH_PLATE_NORMAL.png'},
+    name='TRUTH_PLATE_NORMAL')
+
+TRUTH_PLATE_HARD = Button(
+    area=(620, 200, 770, 250), color=(98, 104, 113), button=(620, 200, 770, 250),
+    file={'cn': './assets/cn/coalition/TRUTH_PLATE_HARD.png', 'en': './assets/cn/coalition/TRUTH_PLATE_HARD.png',
+          'jp': './assets/cn/coalition/TRUTH_PLATE_HARD.png', 'tw': './assets/cn/coalition/TRUTH_PLATE_HARD.png'},
+    name='TRUTH_PLATE_HARD')
+
+TRUTH_PLATE_SP = Button(
+    area=(735, 540, 885, 590), color=(94, 105, 118), button=(735, 540, 885, 590),
+    file={'cn': './assets/cn/coalition/TRUTH_PLATE_SP.png', 'en': './assets/cn/coalition/TRUTH_PLATE_SP.png',
+          'jp': './assets/cn/coalition/TRUTH_PLATE_SP.png', 'tw': './assets/cn/coalition/TRUTH_PLATE_SP.png'},
+    name='TRUTH_PLATE_SP')
+
+TRUTH_PLATE_EX = Button(
+    area=(900, 280, 1050, 330), color=(86, 98, 112), button=(900, 280, 1050, 330),
+    file={'cn': './assets/cn/coalition/TRUTH_PLATE_EX.png', 'en': './assets/cn/coalition/TRUTH_PLATE_EX.png',
+          'jp': './assets/cn/coalition/TRUTH_PLATE_EX.png', 'tw': './assets/cn/coalition/TRUTH_PLATE_EX.png'},
+    name='TRUTH_PLATE_EX')

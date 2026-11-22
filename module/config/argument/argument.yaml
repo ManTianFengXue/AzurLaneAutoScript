@@ -318,6 +318,20 @@ Coalition:
   Fleet:
     value: single
     option: [ single, multi ]
+CoalitionDaily:
+  Mode:
+    value: sp
+    option: [ easy, normal, hard, sp, ex ]
+  Fleet:
+    value: multi
+    option: [ single, multi ]
+TruthAcademy:
+  Mode:
+    value: hard
+    option: [ easy, normal, hard, sp, ex ]
+  Fleet:
+    value: multi
+    option: [ single, multi ]
 EventShop:
   UnlockSSRShip: true
   BuyURShip:
@@ -762,6 +776,20 @@ OpsiHazard1Leveling:
   TargetZone:
     value: 0
     option: [ 0, 44, 22 ]
+  # 侵蚀1练级：是否在明石商店额外购买紫币
+  BuyPurpleCoins: false
+
+# =================== 明石商店 ====================
+OpsiAkashiShop:
+  # 进入明石商店购买行动力
+  BuyActionPoint: false
+  # 进入明石商店购买紫币
+  BuyPurpleCoins: false
+
+# =================== 明石商店（短猫相接）===================
+OpsiMeowfficerShop:
+  # 短猫相接：是否在明石商店额外购买紫币
+  BuyPurpleCoins: false
 
 # =================== Island ====================
 

@@ -48,7 +48,7 @@ class OpsiStronghold(OSMap):
             bool: If all cleared.
         """
         self.config.override(
-            OpsiGeneral_DoRandomMapEvent=False,
+            OpsiGeneral_DoRandomMapEvent=self.is_akashi_shop_enabled,
             HOMO_EDGE_DETECT=False,
             STORY_OPTION=0
         )
@@ -56,7 +56,9 @@ class OpsiStronghold(OSMap):
         for _ in range(3):
             # Attack
             self.fleet_set(fleet.fleet_index)
-            self.run_auto_search(question=False, rescan=False)
+            self.run_auto_search(
+                question=False,
+                rescan='current' if self.is_akashi_shop_enabled else False)
             self.hp_reset()
             self.hp_get()
 

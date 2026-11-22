@@ -102,6 +102,14 @@
       "name": "Event Daily A",
       "help": ""
     },
+    "CoalitionDaily": {
+      "name": "Multi-Fleet Event (Generic)",
+      "help": "Enters the event page, recognizes the selected difficulty text, then clicks it to start the battle.\nStops when emotion or oil drops below the configured limits."
+    },
+    "TruthAcademy": {
+      "name": "Truth Academy",
+      "help": "Auto challenge the Truth Academy event. Same logic as Coalition Daily, locked to this event."
+    },
     "EventB": {
       "name": "Event Daily B",
       "help": ""
@@ -730,6 +738,7 @@
       "coalition_20251120": "DATE A LANE",
       "coalition_20260122": "Light & Shadow Fashion Shoot!",
       "coalition_20260723": "Authentic Horror Story",
+      "coalition_20261124": "Truth Academy",
       "event_20200227_cn": "Northern Overture",
       "event_20200312_cn": "The Solomon Ranger Rerun",
       "event_20200326_cn": "Microlayer Medley",
@@ -1403,6 +1412,48 @@
       "help": "",
       "single": "Solo Challenge",
       "multi": "Coalition Battle"
+    }
+  },
+  "CoalitionDaily": {
+    "_info": {
+      "name": "Multi-Fleet Event (Generic)",
+      "help": "Enters the event page, recognizes the selected difficulty text, then clicks it to start the battle.\nStops when emotion or oil drops below the configured limits."
+    },
+    "Mode": {
+      "name": "Difficulty",
+      "help": "The difficulty to clear. Alas recognizes the matching text on the event page and clicks it.",
+      "easy": "Easy",
+      "normal": "Normal",
+      "hard": "Hard",
+      "sp": "SP",
+      "ex": "EX"
+    },
+    "Fleet": {
+      "name": "Fleets",
+      "help": "Single fleet or multiple fleets",
+      "single": "Single",
+      "multi": "Multiple"
+    }
+  },
+  "TruthAcademy": {
+    "_info": {
+      "name": "Truth Academy",
+      "help": "Auto challenge the Truth Academy event. Same logic as Coalition Daily, locked to this event."
+    },
+    "Mode": {
+      "name": "Difficulty",
+      "help": "The difficulty to clear. Alas recognizes the matching text on the event page and clicks it.",
+      "easy": "Easy",
+      "normal": "Normal",
+      "hard": "Hard",
+      "sp": "SP",
+      "ex": "EX"
+    },
+    "Fleet": {
+      "name": "Fleets",
+      "help": "Single fleet or multiple fleets",
+      "single": "Single",
+      "multi": "Multiple"
     }
   },
   "EventShop": {
@@ -2656,6 +2707,34 @@
       "0": "No Specification",
       "44": "44 | West Continental Shelf D",
       "22": "22 | NA Ocean SW Sector B"
+    },
+    "BuyPurpleCoins": {
+      "name": "Buy Purple Coins",
+      "help": "Also buy purple coins at the Akashi shop.\nConsumes coins and may end leveling earlier."
+    }
+  },
+  "OpsiAkashiShop": {
+    "_info": {
+      "name": "Akashi Shop",
+      "help": "Buy the checked items at the Akashi shop in this task.\nWhen both are unchecked, the OpsiGeneral shop filter is used."
+    },
+    "BuyActionPoint": {
+      "name": "Buy Action Points",
+      "help": "Buy action points when visiting the Akashi shop."
+    },
+    "BuyPurpleCoins": {
+      "name": "Buy Purple Coins",
+      "help": "Buy purple coins when visiting the Akashi shop.\nThis lifts the restriction that purple coins are not bought while CL1 leveling is enabled."
+    }
+  },
+  "OpsiMeowfficerShop": {
+    "_info": {
+      "name": "Akashi Shop",
+      "help": "Buy purple coins at the Akashi shop while meowfficer farming.\nThis lifts the restriction that purple coins are not bought while CL1 leveling is enabled."
+    },
+    "BuyPurpleCoins": {
+      "name": "Buy Purple Coins",
+      "help": "Buy purple coins when visiting the Akashi shop. Consumes coins."
     }
   },
   "IslandGeneral": {

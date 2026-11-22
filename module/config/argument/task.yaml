@@ -139,6 +139,18 @@ EventDaily:
       - Emotion
       - HpControl
       - EnemyPriority
+    CoalitionDaily:
+      - Scheduler
+      - CoalitionDaily
+      - Campaign
+      - StopCondition
+      - Emotion
+    TruthAcademy:
+      - Scheduler
+      - TruthAcademy
+      - Campaign
+      - StopCondition
+      - Emotion
     EventB:
       - Scheduler
       - EventDaily
@@ -288,6 +300,7 @@ Opsi:
       - Scheduler
       - OpsiExplore
       - OpsiFleet
+      - OpsiAkashiShop
     OpsiShop:
       - Scheduler
       - OpsiShop
@@ -298,21 +311,26 @@ Opsi:
       - Scheduler
       - OpsiDaily
       - OpsiFleet
+      - OpsiAkashiShop
     OpsiObscure:
       - Scheduler
       - OpsiObscure
       - OpsiFleet
+      - OpsiAkashiShop
     OpsiAbyssal:
       - Scheduler
       - OpsiAbyssal
       - OpsiFleetFilter
+      - OpsiAkashiShop
     OpsiArchive:
       - Scheduler
       - OpsiFleet
+      - OpsiAkashiShop
     OpsiStronghold:
       - Scheduler
       - OpsiStronghold
       - OpsiFleetFilter
+      - OpsiAkashiShop
     OpsiMonthBoss:
       - Scheduler
       - OpsiMonthBoss
@@ -321,6 +339,7 @@ Opsi:
       - Scheduler
       - OpsiMeowfficerFarming
       - OpsiFleet
+      - OpsiMeowfficerShop
     OpsiHazard1Leveling:
       - Scheduler
       - OpsiHazard1Leveling

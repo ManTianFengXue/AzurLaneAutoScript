@@ -35,7 +35,7 @@ EVENTS = ['Event', 'Event2', 'EventA', 'EventB', 'EventC', 'EventD', 'EventSp']
 GEMS_FARMINGS = ['GemsFarming']
 RAIDS = ['Raid', 'RaidDaily']
 WAR_ARCHIVES = ['WarArchives']
-COALITIONS = ['Coalition', 'CoalitionSp']
+COALITIONS = ['Coalition', 'CoalitionSp', 'CoalitionDaily', 'TruthAcademy']
 MARITIME_ESCORTS = ['MaritimeEscort']
 HOSPITAL = ['Hospital']
 
@@ -484,6 +484,13 @@ class ConfigGenerator:
             if task not in WAR_ARCHIVES:
                 deep_set(self.args, keys=f'{task}.Campaign.Event.option_bold', value=options)
             deep_set(self.args, keys=f'{task}.Campaign.Event.option', value=options)
+            # 专属活动任务：活动名称固定，不随版本自动更新
+            if task == 'TruthAcademy':
+                for server in ARCHIVES_PREFIX.keys():
+                    deep_set(self.args, keys=f'{task}.Campaign.Event.option_{server}', value=['coalition_20261124'])
+                deep_set(self.args, keys=f'{task}.Campaign.Event.option_bold', value=['coalition_20261124'])
+                deep_set(self.args, keys=f'{task}.Campaign.Event.option', value=['coalition_20261124'])
+                deep_set(self.args, keys=f'{task}.Campaign.Event.value', value='coalition_20261124')
 
     @cached_property
     def island_season(self):
