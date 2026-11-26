@@ -185,6 +185,10 @@ class GeneratedConfig:
     Coalition_Mode = 'hard'  # easy, normal, hard, sp
     Coalition_Fleet = 'single'  # single, multi
 
+    # Group `CoalitionDaily`
+    CoalitionDaily_Mode = 'sp'  # easy, normal, hard, sp, ex
+    CoalitionDaily_Fleet = 'multi'  # single, multi
+
     # Group `EventShop`
     EventShop_UnlockSSRShip = True
     EventShop_BuyURShip = 2  # 0, 1, 2
@@ -445,6 +449,14 @@ class GeneratedConfig:
 
     # Group `OpsiHazard1Leveling`
     OpsiHazard1Leveling_TargetZone = 0  # 0, 44, 22
+    OpsiHazard1Leveling_BuyPurpleCoins = False
+
+    # Group `OpsiAkashiShop`
+    OpsiAkashiShop_BuyActionPoint = False
+    OpsiAkashiShop_BuyPurpleCoins = False
+
+    # Group `OpsiMeowfficerShop`
+    OpsiMeowfficerShop_BuyPurpleCoins = False
 
     # Group `IslandGeneral`
     IslandGeneral_Season = 'season_20261105_cn'  # season_20261105_cn

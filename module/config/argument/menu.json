@@ -37,6 +37,7 @@
     "page": "setting",
     "tasks": [
       "EventA",
+      "CoalitionDaily",
       "EventB",
       "EventC",
       "EventD",
