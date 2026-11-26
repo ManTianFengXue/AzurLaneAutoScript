@@ -837,6 +837,54 @@
       "Storage": {}
     }
   },
+  "CoalitionDaily": {
+    "Scheduler": {
+      "Enable": false,
+      "NextRun": "2020-01-01 00:00:00",
+      "Command": "CoalitionDaily",
+      "SuccessInterval": 30,
+      "FailureInterval": 30,
+      "ServerUpdate": "00:00"
+    },
+    "CoalitionDaily": {
+      "Mode": "sp",
+      "Fleet": "multi"
+    },
+    "Campaign": {
+      "Name": "daily",
+      "Event": "campaign_main",
+      "Mode": "normal",
+      "UseClearMode": true,
+      "UseFleetLock": true,
+      "UseAutoSearch": false,
+      "Use2xBook": false,
+      "AmbushEvade": true
+    },
+    "StopCondition": {
+      "OilLimit": 1000,
+      "RunCount": 0,
+      "MapAchievement": "non_stop",
+      "StageIncrease": false,
+      "GetNewShip": false,
+      "ReachLevel": 0
+    },
+    "Emotion": {
+      "Mode": "calculate",
+      "Fleet1Value": 119,
+      "Fleet1Record": "2020-01-01 00:00:00",
+      "Fleet1Control": "prevent_green_face",
+      "Fleet1Recover": "not_in_dormitory",
+      "Fleet1Oath": false,
+      "Fleet2Value": 119,
+      "Fleet2Record": "2020-01-01 00:00:00",
+      "Fleet2Control": "prevent_yellow_face",
+      "Fleet2Recover": "not_in_dormitory",
+      "Fleet2Oath": false
+    },
+    "Storage": {
+      "Storage": {}
+    }
+  },
   "EventB": {
     "Scheduler": {
       "Enable": false,
@@ -1727,6 +1775,10 @@
       "Fleet": 1,
       "Submarine": false
     },
+    "OpsiAkashiShop": {
+      "BuyActionPoint": false,
+      "BuyPurpleCoins": false
+    },
     "Storage": {
       "Storage": {}
     }
@@ -1781,6 +1833,10 @@
       "Fleet": 1,
       "Submarine": false
     },
+    "OpsiAkashiShop": {
+      "BuyActionPoint": false,
+      "BuyPurpleCoins": false
+    },
     "Storage": {
       "Storage": {}
     }
@@ -1801,6 +1857,10 @@
       "Fleet": 1,
       "Submarine": false
     },
+    "OpsiAkashiShop": {
+      "BuyActionPoint": false,
+      "BuyPurpleCoins": false
+    },
     "Storage": {
       "Storage": {}
     }
@@ -1820,6 +1880,10 @@
     "OpsiFleetFilter": {
       "Filter": "Fleet-4 > CallSubmarine > Fleet-2 > Fleet-3 > Fleet-1"
     },
+    "OpsiAkashiShop": {
+      "BuyActionPoint": false,
+      "BuyPurpleCoins": false
+    },
     "Storage": {
       "Storage": {}
     }
@@ -1836,6 +1900,10 @@
     "OpsiFleet": {
       "Fleet": 1,
       "Submarine": false
+    },
+    "OpsiAkashiShop": {
+      "BuyActionPoint": false,
+      "BuyPurpleCoins": false
     },
     "Storage": {
       "Storage": {}
@@ -1855,6 +1923,10 @@
     },
     "OpsiFleetFilter": {
       "Filter": "Fleet-4 > CallSubmarine > Fleet-2 > Fleet-3 > Fleet-1"
+    },
+    "OpsiAkashiShop": {
+      "BuyActionPoint": false,
+      "BuyPurpleCoins": false
     },
     "Storage": {
       "Storage": {}
@@ -1899,6 +1971,9 @@
       "Fleet": 1,
       "Submarine": false
     },
+    "OpsiMeowfficerShop": {
+      "BuyPurpleCoins": false
+    },
     "Storage": {
       "Storage": {}
     }
@@ -1913,7 +1988,8 @@
       "ServerUpdate": "00:00, 12:00"
     },
     "OpsiHazard1Leveling": {
-      "TargetZone": 0
+      "TargetZone": 0,
+      "BuyPurpleCoins": false
     },
     "OpsiFleet": {
       "Fleet": 1,
