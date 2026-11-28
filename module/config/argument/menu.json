@@ -37,6 +37,8 @@
     "page": "setting",
     "tasks": [
       "EventA",
+      "CoalitionDaily",
+      "TruthAcademy",
       "EventB",
       "EventC",
       "EventD",
